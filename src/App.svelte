@@ -1,3 +1,12 @@
+<script>
+	import Profile from './Profile.svelte';
+	import * as staffList from './staffList.json';
+
+	let list = staffList.default.sort(() => Math.random() - 0.5);
+
+	console.log(list);
+</script>
+
 <main class="max-h-screen max-w-screen lg:ml-12">
 	<div class="flex flex-nowrap justify-center lg:justify-start items-center select-none mt-20">
 		<div class="w-[96px] h-[96px] sm:w-[112px] sm:h-[112px] mr-6">
@@ -96,10 +105,48 @@
 			></a
 		>
 	</div>
+
+	<div id="staff-list">
+		<div class="absolute w-1/2 h-full top-0 right-0 overflow-hidden">
+			{#each list as data}
+				<Profile {...data} />
+			{/each}
+		</div>
+	</div>
 </main>
 
 <style lang="postcss" global>
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
+
+	/* Doesn't show up in the browser for mobiles only */
+	@media (max-width: 1024px) {
+		#staff-list {
+			display: none;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		#staff-list {
+			display: inline;
+		}
+
+		#post {
+			-webkit-animation-name: scrolling;
+			-webkit-animation-duration: 30s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: alternate;
+			-webkit-animation-timing-function: linear;
+		}
+	}
+
+	@-webkit-keyframes scrolling {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(-750%);
+		}
+	}
 </style>
