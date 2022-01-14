@@ -3,78 +3,78 @@
 		"name": "Alex",
 		"username": "Alex",
 		"description": "Owner and front-end developer of Puroto.",
-		"avatar": "https://cdn.discordapp.com/attachments/902227142786547732/931302425694990386/iconRAlekuso_.png"
+		"avatar": "/avatar/Alex.png"
 	},
 	{
 		"name": "Neo",
 		"username": "NeoNiNe",
 		"description": "Puroto Moderator, pokemon TCG master, and tech enjoyer.",
-		"avatar": "https://media.discordapp.net/attachments/902227142786547732/931308123082334278/5fe1e6611167bbd10b407f0bbf73de3b.png"
+		"avatar": "/avatar/Neo.webp"
 	},
 	{
 		"name": "Laz",
 		"username": "LazRacc",
 		"description": "yeah",
-		"avatar": "https://cdn.discordapp.com/attachments/902227142786547732/931308673240809492/a_34d31399727087d438c38416d6f4c32d.png"
+		"avatar": "/avatar/Laz.webp"
 	},
 	{
 		"name": "Stax",
 		"username": "staxthefox",
 		"description": "Back-end and DevOps foxxo of Puroto. The guy for linux, C++/GO and devops in general. I use arch btw :P",
-		"avatar": "https://media.discordapp.net/attachments/902227142786547732/931314429805608990/IMG_20220113_233024_020.jpg"
+		"avatar": "/avatar/Stax.jpg"
 	},
 	{
 		"name": "FyWolf",
 		"username": "FyWolf",
 		"description": "One of the co-owner of the project, leads the teams while being lazy",
-		"avatar": "https://media.discordapp.net/attachments/902227142786547732/931308940682219540/be27404fa197fd437ef596211e58fd57.png"
+		"avatar": "/avatar/FyWolf.webp"
 	},
 	{
 		"name": "Zatch",
 		"username": "ZatchyBeeps",
 		"description": "Your robot moderator",
-		"avatar": "https://media.discordapp.net/attachments/902227142786547732/931309146907754616/fa089b52cf6cb5e367e0b06ac5871c9a.png"
+		"avatar": "/avatar/Zatch.webp"
 	},
 	{
 		"name": "Furious Feline",
 		"username": "Furious_Feline",
 		"description": "Cat, co owner and coder for Puroto also yeen",
-		"avatar": "https://media.discordapp.net/attachments/902227142786547732/931309503843041300/WiUFXq2l_400x400.png"
+		"avatar": "/avatar/Feline.png"
 	},
 	{
 		"name": "Kravitz \"Rook\" Winchester",
 		"username": "RadarCoyote",
 		"description": "Ethereal cryptid coyote. Lead moderator of Puroto.\nHeavily caffeinated, never duplicated! Check out my Twitch!",
-		"avatar": "https://media.discordapp.net/attachments/902227142786547732/931309909834862632/14f7f3f3da16d30a99387ae54c74a2c9.png"
+		"avatar": "/avatar/Radar.png"
 	},
 	{
 		"name": "Robin",
 		"username": "BaeSpacee",
 		"description": "I'm one of the moderators!\nI also draw sometimes ^^",
-		"avatar": "https://media.discordapp.net/attachments/929747838404014080/931325292826484806/icon.png?width=670&height=670"
+		"avatar": "/avatar/Robin.png"
 	},
 	{
 		"name": "Nebula Animations",
 		"username": "NebulaAnimations",
 		"description": "UI Designer for Puroto, VFX & Graphic Designer for 8 years,  avid video game player, and enjoyer of hanging out with friends. ^-^",
-		"avatar": "https://media.discordapp.net/attachments/902227142786547732/931315999905579018/0d43e3942ae14bb30ea44f3eeec9a322.png"
+		"avatar": "/avatar/Nebula.webp"
 	},
 	{
 		"name": "Mura",
 		"username": "NEKOMURA",
 		"description": "Part time artist and full time cat / completely insane / designer of the logo and mascot / meow :3",
-		"avatar": "https://media.discordapp.net/attachments/929747838404014080/931325251885879326/CLIPStudioPaint_tgh6G2Q2DM.png?width=670&height=670"
+		"avatar": "/avatar/Mura.png"
 	},
 	{
 		"name": "Azzy",
 		"username": "real_azzy_ttv",
 		"description": "Sometimes an artist, sometimes a dragon grrkrgkrkrmrmrmrkr...",
-		"avatar": "https://media.discordapp.net/attachments/929747838404014080/931325822881656842/AzzyMedium.png?width=670&height=670"
+		"avatar": "/avatar/Azzy.png"
 	},
 	{
 		"name": "Lucrayzor",
 		"username": "Lucrayzor",
 		"description": "advisor for design and implementation",
-		"avatar": "https://media.discordapp.net/attachments/902227142786547732/931564178517405777/b5dbcd3e1ff986c9fdde1c85dc231e1e.png"
+		"avatar": "/avatar/Lucrayzor.webp"
 	}
 ]

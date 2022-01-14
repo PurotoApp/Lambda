@@ -1,5 +1,5 @@
 <script>
-	import Profile from './Profile.svelte';
+	import Profile from './components/Profile.svelte';
 	import * as staffList from './staffList.json';
 
 	let list = staffList.default.sort(() => Math.random() - 0.5);
@@ -106,9 +106,11 @@
 
 	<div id="staff-list">
 		<div class="absolute w-1/2 h-full top-0 right-0 overflow-hidden">
-			{#each list as data}
-				<Profile {...data} />
-			{/each}
+			<div id="post">
+				{#each list as data}
+					<Profile {...data} />
+				{/each}
+			</div>
 		</div>
 	</div>
 </main>
@@ -144,7 +146,7 @@
 			transform: translateY(0);
 		}
 		100% {
-			transform: translateY(-825%);
+			transform: translateY(-65%);
 		}
 	}
 </style>
