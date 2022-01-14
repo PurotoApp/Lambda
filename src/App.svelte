@@ -3,8 +3,6 @@
 	import * as staffList from './staffList.json';
 
 	let list = staffList.default.sort(() => Math.random() - 0.5);
-
-	console.log(list);
 </script>
 
 <main class="max-h-screen max-w-screen lg:ml-12">
@@ -134,7 +132,7 @@
 
 		#post {
 			-webkit-animation-name: scrolling;
-			-webkit-animation-duration: 30s;
+			-webkit-animation-duration: 60s;
 			-webkit-animation-iteration-count: infinite;
 			-webkit-animation-direction: alternate;
 			-webkit-animation-timing-function: linear;
@@ -146,7 +144,7 @@
 			transform: translateY(0);
 		}
 		100% {
-			transform: translateY(-750%);
+			transform: translateY(-825%);
 		}
 	}
 </style>
