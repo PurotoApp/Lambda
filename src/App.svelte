@@ -1,3 +1,10 @@
+<script>
+	import Profile from './Profile.svelte';
+	import * as staffList from './staffList.json';
+
+	let list = staffList.default.sort(() => Math.random() - 0.5);
+</script>
+
 <main class="max-h-screen max-w-screen lg:ml-12">
 	<div class="flex flex-nowrap justify-center lg:justify-start items-center select-none mt-20">
 		<div class="w-[96px] h-[96px] sm:w-[112px] sm:h-[112px] mr-6">
@@ -18,9 +25,14 @@
 	</h1>
 
 	<div
-		class="relative flex flex-wrap justify-center lg:justify-start left-[50%] translate-x-[-50%] lg:left-[0] lg:translate-x-[0] mt-36 w-10/12 lg:w-1/2"
+		class="relative flex flex-wrap justify-center lg:justify-start left-[50%] translate-x-[-50%] lg:left-[0] lg:translate-x-[-0.69rem] mt-36 w-10/12 lg:w-1/2"
 	>
-		<a class="min-w-full lg:min-w-[0px] mx-1 " rel="noopener" target="_blank" href="https://apply.puroto.net/"
+		<a
+			tabindex="-1"
+			class="min-w-full lg:min-w-[0px] mx-1"
+			rel="noopener"
+			target="_blank"
+			href="https://apply.puroto.net/"
 			><button
 				type="button"
 				class="group border-4 border-purple rounded-[12px] min-w-full mx-1 mb-4 lg:mb-2 py-2 hover:bg-purple transition duration-200 ease-in-out"
@@ -30,17 +42,27 @@
 				></button
 			></a
 		>
-		<a class="min-w-full lg:min-w-[0px] mx-1" rel="noopener" target="_blank" href="https://discord.puroto.net/"
+		<a
+			tabindex="-1"
+			class="min-w-full lg:min-w-[0px] mx-1"
+			rel="noopener"
+			target="_blank"
+			href="https://discord.puroto.net/"
 			><button
 				type="button"
 				class="group border-4 border-discord rounded-[12px] min-w-full mx-1 mb-4 lg:mb-2 py-2 hover:bg-discord transition duration-200 ease-in-out"
 				><span
-					class="w-full h-full select-none text-discord text-2xl lg:text-3xl lg:px-[3rem] font-semibold group-hover:text-background transition duration-100"
+					class="w-full h-full select-none text-discord text-2xl lg:text-3xl lg:px-[2.8rem] font-semibold group-hover:text-background transition duration-100"
 					>Join our Discord</span
 				></button
 			></a
 		>
-		<a class="min-w-full lg:min-w-[0px] mx-1" rel="noopener" target="_blank" href="https://patreon.com/purotoapp"
+		<a
+			tabindex="-1"
+			class="min-w-full lg:min-w-[0px] mx-1"
+			rel="noopener"
+			target="_blank"
+			href="https://patreon.com/purotoapp"
 			><button
 				type="button"
 				class="group border-4 border-patreon rounded-[12px] min-w-full mx-1 mb-4 lg:mb-2 py-2 hover:bg-patreon transition duration-200 ease-in-out"
@@ -50,27 +72,44 @@
 				></button
 			></a
 		>
-		<a class="min-w-full lg:min-w-[0px] mx-1" rel="noopener" target="_blank" href="https://twitter.com/purotoapp"
+		<a
+			tabindex="-1"
+			class="min-w-full lg:min-w-[0px] mx-1"
+			rel="noopener"
+			target="_blank"
+			href="https://twitter.com/purotoapp"
 			><button
 				type="button"
 				class="group border-4 border-twitter rounded-[12px] min-w-full mx-1 mb-4 lg:mb-2 py-2 hover:bg-twitter transition duration-200 ease-in-out"
 				><span
-					class="w-full h-full select-none text-twitter text-2xl lg:text-3xl lg:px-[0.69rem] font-semibold group-hover:text-background transition duration-100"
+					class="w-full h-full select-none text-twitter text-2xl lg:text-3xl lg:px-[0.6rem] font-semibold group-hover:text-background transition duration-100"
 					>Follow our Twitter</span
 				></button
 			></a
 		>
-		<a class="min-w-full lg:min-w-[0px] mx-1" rel="noopener" target="_blank" href="https://github.com/purotoapp"
+		<a
+			tabindex="-1"
+			class="min-w-full lg:min-w-[0px] mx-1"
+			rel="noopener"
+			target="_blank"
+			href="https://github.com/purotoapp"
 			><button
 				type="button"
 				class="group border-4 border-github rounded-[12px] min-w-full mx-1 mb-4 lg:mb-2 py-2 hover:bg-github transition duration-200 ease-in-out"
 				><span
-					class="w-full h-full select-none text-github text-2xl lg:text-3xl lg:px-[6.625rem] font-semibold group-hover:text-background transition duration-100"
-					
+					class="w-full h-full select-none text-github text-2xl lg:text-3xl lg:px-[6.65rem] font-semibold group-hover:text-background transition duration-100"
 					>Check out our GitHub</span
 				></button
 			></a
 		>
+	</div>
+
+	<div id="staff-list">
+		<div class="absolute w-1/2 h-full top-0 right-0 overflow-hidden">
+			{#each list as data}
+				<Profile {...data} />
+			{/each}
+		</div>
 	</div>
 </main>
 
@@ -78,4 +117,34 @@
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
+
+	/* Doesn't show up in the browser for mobiles only */
+	@media (max-width: 1024px) {
+		#staff-list {
+			display: none;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		#staff-list {
+			display: inline;
+		}
+
+		#post {
+			-webkit-animation-name: scrolling;
+			-webkit-animation-duration: 60s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: alternate;
+			-webkit-animation-timing-function: linear;
+		}
+	}
+
+	@-webkit-keyframes scrolling {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(-825%);
+		}
+	}
 </style>
