@@ -25,7 +25,7 @@
 	</h1>
 
 	<div
-		class="relative flex flex-wrap justify-center lg:justify-start left-[50%] translate-x-[-50%] lg:left-[0] lg:translate-x-[-0.69rem] mt-36 w-10/12 lg:w-1/2"
+		class="relative flex flex-wrap justify-center lg:justify-start left-[50%] translate-x-[-50%] lg:left-[0] lg:translate-x-[-0.69rem] mt-36 w-10/12 lg:w-[42rem]"
 	>
 		<a
 			tabindex="-1"
