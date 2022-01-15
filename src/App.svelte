@@ -25,7 +25,7 @@
 	</h1>
 
 	<div
-		class="relative flex flex-wrap justify-center lg:justify-start left-[50%] translate-x-[-50%] lg:left-[0] lg:translate-x-[-0.69rem] mt-36 w-10/12 lg:w-[42rem]"
+		class="absolute flex flex-wrap justify-center lg:justify-start left-1/2 -translate-x-1/2 lg:left-[0] lg:ml-12 lg:mb-8 lg:bottom-0 lg:translate-x-[-0.69rem] w-10/12 lg:w-[42rem]"
 	>
 		<a
 			tabindex="-1"
@@ -105,7 +105,7 @@
 	</div>
 
 	<div id="staff-list">
-		<div class="absolute w-1/2 h-full top-0 right-0 overflow-hidden">
+		<div class="absolute w-1/2 h-screen top-0 right-0 overflow-hidden">
 			<div id="post">
 				{#each list as data}
 					<Profile {...data} />
@@ -146,7 +146,7 @@
 			transform: translateY(0);
 		}
 		100% {
-			transform: translateY(-65%);
+			transform: translateY(-50%);
 		}
 	}
 </style>
