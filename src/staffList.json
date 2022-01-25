@@ -76,5 +76,17 @@
 		"username": "Lucrayzor",
 		"description": "advisor for design and implementation",
 		"avatar": "/avatar/Lucrayzor.webp"
+	},
+	{
+		"name": "RenzoTheDev",
+		"username": "VulpoTheDev",
+		"description": "Lazy Front-end Developer for Puroto",
+		"avatar": "/avatar/RenzoTheDev.png"
+	},
+	{
+		"name": "Hale",
+		"username": "Hale",
+		"description": "Part-time derg, designer for puroto",
+		"avatar": "/avatar/Hale.png"
 	}
 ]

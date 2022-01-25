@@ -146,7 +146,7 @@
 			transform: translateY(0);
 		}
 		100% {
-			transform: translateY(-50%);
+			transform: translateY(calc(-100% + 90vh));
 		}
 	}
 </style>
