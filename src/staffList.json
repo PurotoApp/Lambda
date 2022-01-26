@@ -88,5 +88,11 @@
 		"username": "Hale",
 		"description": "Part-time derg, designer for puroto",
 		"avatar": "/avatar/Hale.png"
+	},
+	{
+		"name": "Fuchsicus",
+		"username": "Fuchsicus",
+		"description": "Designer and Artist for Puroto",
+		"avatar": "/avatar/Fuchsicus.png"
 	}
 ]
