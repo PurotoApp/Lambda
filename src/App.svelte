@@ -104,7 +104,7 @@
 			></a
 		>
 	</div>
-	{#if wide > 1000}
+	{#if wide >= 1024}
 		<div id="staff-list">
 			<div class="absolute w-1/2 h-screen top-0 right-0 overflow-hidden">
 				<div id="post">
