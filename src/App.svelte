@@ -1,10 +1,11 @@
 <script>
 	import Profile from './components/Profile.svelte';
 	import * as staffList from './staffList.json';
-
+	let wide;
 	let list = staffList.default.sort(() => Math.random() - 0.5);
 </script>
 
+<svelte:window bind:innerWidth={wide} />
 <main class="max-h-screen max-w-screen lg:ml-12">
 	<div class="flex flex-nowrap justify-center lg:justify-start items-center select-none mt-20">
 		<div class="w-[96px] h-[96px] sm:w-[112px] sm:h-[112px] mr-6">
@@ -19,7 +20,7 @@
 		<span class="text-5xl sm:text-8xl font-bold inline-block">Puroto</span>
 	</div>
 	<h1
-		class="relative text-[2rem] sm:text-[3rem] max-w-[80%] lg:max-w-[40%] left-[2.5rem] lg:left-[0rem] font-semibold select-none mt-6"
+		class="relative text-[2rem] sm:text-[3rem] text-center sm:text-center lg:max-w-[40%] lg:text-left font-semibold select-none mt-6 mb-12"
 	>
 		A future social network for furries.
 	</h1>
@@ -29,7 +30,7 @@
 	>
 		<a
 			tabindex="-1"
-			class="min-w-full lg:min-w-[0px] mx-1"
+			class="mb-2 min-w-full lg:min-w-[0px] mx-1"
 			rel="noopener"
 			target="_blank"
 			href="https://apply.puroto.net/"
@@ -44,7 +45,7 @@
 		>
 		<a
 			tabindex="-1"
-			class="min-w-full lg:min-w-[0px] mx-1"
+			class="mb-2 min-w-full lg:min-w-[0px] mx-1"
 			rel="noopener"
 			target="_blank"
 			href="https://discord.puroto.net/"
@@ -59,7 +60,7 @@
 		>
 		<a
 			tabindex="-1"
-			class="min-w-full lg:min-w-[0px] mx-1"
+			class="mb-2 min-w-full lg:min-w-[0px] mx-1"
 			rel="noopener"
 			target="_blank"
 			href="https://patreon.com/purotoapp"
@@ -74,7 +75,7 @@
 		>
 		<a
 			tabindex="-1"
-			class="min-w-full lg:min-w-[0px] mx-1"
+			class="mb-2 min-w-full lg:min-w-[0px] mx-1"
 			rel="noopener"
 			target="_blank"
 			href="https://twitter.com/purotoapp"
@@ -89,7 +90,7 @@
 		>
 		<a
 			tabindex="-1"
-			class="min-w-full lg:min-w-[0px] mx-1"
+			class="mb-2 min-w-full lg:min-w-[0px] mx-1"
 			rel="noopener"
 			target="_blank"
 			href="https://github.com/purotoapp"
@@ -103,16 +104,17 @@
 			></a
 		>
 	</div>
-
-	<div id="staff-list">
-		<div class="absolute w-1/2 h-screen top-0 right-0 overflow-hidden">
-			<div id="post">
-				{#each list as data}
-					<Profile {...data} />
-				{/each}
+	{#if wide >= 1024}
+		<div id="staff-list">
+			<div class="absolute w-1/2 h-screen top-0 right-0 overflow-hidden">
+				<div id="post">
+					{#each list as data}
+						<Profile {...data} />
+					{/each}
+				</div>
 			</div>
 		</div>
-	</div>
+	{/if}
 </main>
 
 <style lang="postcss" global>
