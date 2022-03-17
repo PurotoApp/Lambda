@@ -104,8 +104,8 @@
 			></a
 		>
 	</div>
-	{#if wide >= 1024}
-		<div id="staff-list">
+	{#if wide >= 1088}
+		<div id="lg:inline lgb:hidden">
 			<div class="absolute w-1/2 h-screen top-0 right-0 overflow-hidden">
 				<div id="post">
 					{#each list as data}
@@ -122,18 +122,7 @@
 	@tailwind components;
 	@tailwind utilities;
 
-	/* Doesn't show up in the browser for mobiles only */
-	@media (max-width: 1024px) {
-		#staff-list {
-			display: none;
-		}
-	}
-
 	@media (min-width: 1024px) {
-		#staff-list {
-			display: inline;
-		}
-
 		#post {
 			-webkit-animation-name: scrolling;
 			-webkit-animation-duration: 60s;
