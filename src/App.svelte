@@ -25,85 +25,82 @@
 		A future social network for furries.
 	</h1>
 
+	<!-- Buttons -->
 	<div
 		class="absolute flex flex-wrap justify-center lg:justify-start left-1/2 -translate-x-1/2 lg:left-[0] lg:ml-12 lg:mb-8 lg:bottom-0 lg:translate-x-[-0.69rem] w-10/12 lg:w-[42rem]"
 	>
 		<a
 			tabindex="-1"
-			class="mb-2 min-w-full lg:min-w-[0px] mx-1"
+			class="lg:my-1 my-2 min-w-full lg:min-w-[0px] mx-1"
 			rel="noopener"
 			target="_blank"
 			href="https://apply.puroto.net/"
-			><button
-				type="button"
-				class="group border-4 border-purple rounded-[12px] min-w-full mx-1 mb-4 lg:mb-2 py-2 hover:bg-purple transition duration-200 ease-in-out"
-				><span
-					class="w-full h-full select-none text-purple text-2xl lg:text-3xl lg:px-[3rem] font-semibold group-hover:text-background transition duration-100"
-					>Apply</span
-				></button
+			><div
+				class="group border-4 border-purple rounded-[12px] min-w-full mx-1 py-2 hover:bg-purple transition duration-200 ease-in-out"
+				><p
+					class="text-center select-none text-purple text-2xl lg:text-3xl lg:px-[3rem] font-semibold group-hover:text-background transition duration-100"
+					>Apply</p
+				></div
 			></a
 		>
 		<a
 			tabindex="-1"
-			class="mb-2 min-w-full lg:min-w-[0px] mx-1"
+			class="lg:my-1 my-2 min-w-full lg:min-w-[0px] mx-1"
 			rel="noopener"
 			target="_blank"
 			href="https://discord.puroto.net/"
-			><button
-				type="button"
-				class="group border-4 border-discord rounded-[12px] min-w-full mx-1 mb-4 lg:mb-2 py-2 hover:bg-discord transition duration-200 ease-in-out"
-				><span
-					class="w-full h-full select-none text-discord text-2xl lg:text-3xl lg:px-[2.8rem] font-semibold group-hover:text-background transition duration-100"
-					>Join our Discord</span
-				></button
+			><div
+				class="group border-4 border-discord rounded-[12px] min-w-full mx-1 py-2 hover:bg-discord transition duration-200 ease-in-out"
+				><p
+					class="text-center select-none text-discord text-2xl lg:text-3xl lg:px-[2.8rem] font-semibold group-hover:text-background transition duration-100"
+					>Join our Discord</p
+				></div
 			></a
 		>
 		<a
 			tabindex="-1"
-			class="mb-2 min-w-full lg:min-w-[0px] mx-1"
+			class="lg:my-1 my-2 min-w-full lg:min-w-[0px] mx-1"
 			rel="noopener"
 			target="_blank"
 			href="https://patreon.com/purotoapp"
-			><button
-				type="button"
-				class="group border-4 border-patreon rounded-[12px] min-w-full mx-1 mb-4 lg:mb-2 py-2 hover:bg-patreon transition duration-200 ease-in-out"
-				><span
-					class="w-full h-full select-none text-patreon text-2xl lg:text-3xl lg:px-[2rem] font-semibold group-hover:text-background transition duration-100"
-					>Support Us</span
-				></button
+			><div
+				class="group border-4 border-patreon rounded-[12px] min-w-full mx-1 py-2 hover:bg-patreon transition duration-200 ease-in-out"
+				><p
+					class="text-center select-none text-patreon text-2xl lg:text-3xl lg:px-[2rem] font-semibold group-hover:text-background transition duration-100"
+					>Support Us</p
+				></div
 			></a
 		>
 		<a
 			tabindex="-1"
-			class="mb-2 min-w-full lg:min-w-[0px] mx-1"
+			class="lg:my-1 my-2 min-w-full lg:min-w-[0px] mx-1"
 			rel="noopener"
 			target="_blank"
 			href="https://twitter.com/purotoapp"
-			><button
-				type="button"
-				class="group border-4 border-twitter rounded-[12px] min-w-full mx-1 mb-4 lg:mb-2 py-2 hover:bg-twitter transition duration-200 ease-in-out"
-				><span
-					class="w-full h-full select-none text-twitter text-2xl lg:text-3xl lg:px-[0.6rem] font-semibold group-hover:text-background transition duration-100"
-					>Follow our Twitter</span
-				></button
+			><div
+				class="group border-4 border-twitter rounded-[12px] min-w-full mx-1 py-2 hover:bg-twitter transition duration-200 ease-in-out"
+				><p
+					class="text-center select-none text-twitter text-2xl lg:text-3xl lg:px-[0.6rem] font-semibold group-hover:text-background transition duration-100"
+					>Follow our Twitter</p
+				></div
 			></a
 		>
 		<a
 			tabindex="-1"
-			class="mb-2 min-w-full lg:min-w-[0px] mx-1"
+			class="lg:my-1 my-2 min-w-full lg:min-w-[0px] mx-1"
 			rel="noopener"
 			target="_blank"
 			href="https://github.com/purotoapp"
-			><button
-				type="button"
-				class="group border-4 border-github rounded-[12px] min-w-full mx-1 mb-4 lg:mb-2 py-2 hover:bg-github transition duration-200 ease-in-out"
-				><span
-					class="w-full h-full select-none text-github text-2xl lg:text-3xl lg:px-[6.65rem] font-semibold group-hover:text-background transition duration-100"
-					>Check out our GitHub</span
-				></button
+			><div
+				class="group border-4 border-github rounded-[12px] min-w-full mx-1 py-2 hover:bg-github transition duration-200 ease-in-out"
+				><p
+					class="text-center select-none text-github text-2xl lg:text-3xl lg:px-[6.65rem] font-semibold group-hover:text-background transition duration-100"
+					>Check out our GitHub</p
+				></div
 			></a
 		>
 	</div>
+
 	{#if wide >= 1088}
 		<div id="lg:inline lgb:hidden">
 			<div class="absolute w-1/2 h-screen top-0 right-0 overflow-hidden">
