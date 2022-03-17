@@ -1,12 +1,12 @@
 module.exports = {
 	mode: 'jit',
 	purge: ['./public/index.html', './src/**/*.svelte'],
-	darkMode: false,
 	theme: {
 		screens: {
 			sm: '640px',
 			md: '768px',
-			lg: '1024px',
+			lgb: { max: '1088px' },
+			lg: '1088px',
 			xl: '1280px'
 		},
 		fontFamily: {
@@ -41,9 +41,5 @@ module.exports = {
 
 			github: '#fafafa'
 		}
-	},
-	variants: {
-		extend: {}
-	},
-	plugins: []
+	}
 };
