@@ -99,7 +99,7 @@
 
 	{#if wide >= lg}
 		<div id="lg:inline lgb:hidden">
-			<div class="absolute w-[40vw] h-screen top-0 right-0 overflow-hidden">
+			<div class="absolute w-[40vw] h-screen top-0 right-0 overflow-hidden pr-4">
 				<div id="card">
 					{#each list as data}
 						<Profile {...data} />
