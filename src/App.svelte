@@ -3,6 +3,7 @@
 	import * as staffList from './staffList.json';
 	let wide;
 	let list = staffList.default.sort(() => Math.random() - 0.5);
+	let lg = 1024;
 </script>
 
 <svelte:window bind:innerWidth={wide} />
@@ -101,10 +102,10 @@
 		>
 	</div>
 
-	{#if wide >= 1088}
+	{#if wide >= lg}
 		<div id="lg:inline lgb:hidden">
-			<div class="absolute w-1/2 h-screen top-0 right-0 overflow-hidden">
-				<div id="post">
+			<div class="absolute w-[40vw] h-screen top-0 right-0 overflow-hidden">
+				<div id="card">
 					{#each list as data}
 						<Profile {...data} />
 					{/each}
@@ -120,7 +121,7 @@
 	@tailwind utilities;
 
 	@media (min-width: 1024px) {
-		#post {
+		#card {
 			-webkit-animation-name: scrolling;
 			-webkit-animation-duration: 60s;
 			-webkit-animation-iteration-count: infinite;
