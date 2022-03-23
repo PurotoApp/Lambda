@@ -11,7 +11,7 @@
 	</div>
 	<div class="absolute inline-block ml-4 h-24">
 		<span class="text-2xl block">{name}</span>
-		<span class="text-sm text-gray-4 block">@{username}</span>
+		<span class="text-sm text-gray-6 block">@{username}</span>
 		<span class="mt-2 block">{description}</span>
 	</div>
 </div>
