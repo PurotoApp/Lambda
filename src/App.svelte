@@ -10,9 +10,11 @@
 <svelte:window bind:innerWidth={wide} />
 
 <main>
-	<div class="lg:ml-12 flex flex-nowrap justify-center lg:justify-start items-center select-none mt-20">
+	<div
+		class="lg:ml-12 flex flex-nowrap justify-center lg:justify-start items-center select-none mt-20"
+	>
 		<div class="w-[96px] h-[96px] sm:w-[112px] sm:h-[112px] mr-6">
-			<Logo color="#6D6BED"/>
+			<Logo color="#6D6BED" />
 		</div>
 		<span class="text-5xl sm:text-8xl font-bold inline-block">Puroto</span>
 	</div>
@@ -34,11 +36,13 @@
 			href="https://apply.puroto.net/"
 			><div
 				class="group border-4 border-purple rounded-[12px] min-w-full mx-1 py-2 hover:bg-purple transition duration-200 ease-in-out"
-				><p
+			>
+				<p
 					class="text-center select-none text-purple text-2xl lg:text-3xl lg:px-[3rem] font-semibold group-hover:text-background transition duration-100"
-					>Apply</p
-				></div
-			></a
+				>
+					Apply
+				</p>
+			</div></a
 		>
 		<a
 			tabindex="-1"
@@ -48,11 +52,13 @@
 			href="https://discord.puroto.net/"
 			><div
 				class="group border-4 border-discord rounded-[12px] min-w-full mx-1 py-2 hover:bg-discord transition duration-200 ease-in-out"
-				><p
+			>
+				<p
 					class="text-center select-none text-discord text-2xl lg:text-3xl lg:px-[2.8rem] font-semibold group-hover:text-background transition duration-100"
-					>Join our Discord</p
-				></div
-			></a
+				>
+					Join our Discord
+				</p>
+			</div></a
 		>
 		<a
 			tabindex="-1"
@@ -62,11 +68,13 @@
 			href="https://patreon.com/purotoapp"
 			><div
 				class="group border-4 border-patreon rounded-[12px] min-w-full mx-1 py-2 hover:bg-patreon transition duration-200 ease-in-out"
-				><p
+			>
+				<p
 					class="text-center select-none text-patreon text-2xl lg:text-3xl lg:px-[2rem] font-semibold group-hover:text-background transition duration-100"
-					>Support Us</p
-				></div
-			></a
+				>
+					Support Us
+				</p>
+			</div></a
 		>
 		<a
 			tabindex="-1"
@@ -76,11 +84,13 @@
 			href="https://twitter.com/purotoapp"
 			><div
 				class="group border-4 border-twitter rounded-[12px] min-w-full mx-1 py-2 hover:bg-twitter transition duration-200 ease-in-out"
-				><p
+			>
+				<p
 					class="text-center select-none text-twitter text-2xl lg:text-3xl lg:px-[0.6rem] font-semibold group-hover:text-background transition duration-100"
-					>Follow our Twitter</p
-				></div
-			></a
+				>
+					Follow our Twitter
+				</p>
+			</div></a
 		>
 		<a
 			tabindex="-1"
@@ -90,11 +100,13 @@
 			href="https://github.com/purotoapp"
 			><div
 				class="group border-4 border-github rounded-[12px] min-w-full mx-1 py-2 hover:bg-github transition duration-200 ease-in-out"
-				><p
+			>
+				<p
 					class="text-center select-none text-github text-2xl lg:text-3xl lg:px-[6.65rem] font-semibold group-hover:text-background transition duration-100"
-					>Check out our GitHub</p
-				></div
-			></a
+				>
+					Check out our GitHub
+				</p>
+			</div></a
 		>
 	</div>
 
