@@ -12,22 +12,10 @@
 		"avatar": "/avatar/Neo.webp"
 	},
 	{
-		"name": "Laz",
-		"username": "LazRacc",
-		"description": "yeah",
-		"avatar": "/avatar/Laz.webp"
-	},
-	{
 		"name": "Stax",
 		"username": "staxthefox",
 		"description": "Back-end and DevOps foxxo of Puroto. The guy for linux, C++/GO and devops in general. I use arch btw :P",
 		"avatar": "/avatar/Stax.jpg"
-	},
-	{
-		"name": "FyWolf",
-		"username": "FyWolf",
-		"description": "One of the co-owner of the project, leads the teams while being lazy",
-		"avatar": "/avatar/FyWolf.webp"
 	},
 	{
 		"name": "Zatch",
@@ -40,12 +28,6 @@
 		"username": "Furious_Feline",
 		"description": "Cat, co owner and coder for Puroto also yeen",
 		"avatar": "/avatar/Feline.png"
-	},
-	{
-		"name": "Kravitz \"Rook\" Winchester",
-		"username": "RadarCoyote",
-		"description": "Ethereal cryptid coyote. Lead moderator of Puroto.\nHeavily caffeinated, never duplicated! Check out my Twitch!",
-		"avatar": "/avatar/Radar.png"
 	},
 	{
 		"name": "Robin",
@@ -88,11 +70,5 @@
 		"username": "Hale",
 		"description": "Part-time derg, designer for puroto",
 		"avatar": "/avatar/Hale.png"
-	},
-	{
-		"name": "Fuchsicus",
-		"username": "Fuchsicus",
-		"description": "Designer and Artist for Puroto",
-		"avatar": "/avatar/Fuchsicus.png"
 	}
 ]

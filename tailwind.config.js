@@ -1,11 +1,11 @@
 module.exports = {
 	mode: 'jit',
 	purge: ['./public/index.html', './src/**/*.svelte'],
-	darkMode: false,
 	theme: {
 		screens: {
 			sm: '640px',
 			md: '768px',
+			lgb: { max: '1024px' },
 			lg: '1024px',
 			xl: '1280px'
 		},
@@ -26,7 +26,8 @@ module.exports = {
 				2: '#3A3743',
 				3: '#4B4757',
 				4: '#585469',
-				5: '#6E6986'
+				5: '#6E6986',
+				6: '#89899A'
 			},
 
 			purple: '#6D6BED',
@@ -41,9 +42,5 @@ module.exports = {
 
 			github: '#fafafa'
 		}
-	},
-	variants: {
-		extend: {}
-	},
-	plugins: []
+	}
 };
