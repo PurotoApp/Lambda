@@ -8,15 +8,16 @@
 </script>
 
 <svelte:window bind:innerWidth={wide} />
-<main class="max-h-screen max-w-screen lg:ml-12">
-	<div class="flex flex-nowrap justify-center lg:justify-start items-center select-none mt-20">
+
+<main>
+	<div class="lg:ml-12 flex flex-nowrap justify-center lg:justify-start items-center select-none mt-20">
 		<div class="w-[96px] h-[96px] sm:w-[112px] sm:h-[112px] mr-6">
 			<Logo color="#6D6BED"/>
 		</div>
 		<span class="text-5xl sm:text-8xl font-bold inline-block">Puroto</span>
 	</div>
 	<h1
-		class="relative text-[2rem] sm:text-[3rem] text-center sm:text-center lg:max-w-[40%] lg:text-left font-semibold select-none mt-6 mb-12"
+		class="lg:ml-12 relative text-[2rem] sm:text-[3rem] text-center sm:text-center lg:max-w-[40%] lg:text-left font-semibold select-none mt-6 mb-12"
 	>
 		A future social network for furries.
 	</h1>
