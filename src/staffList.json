@@ -70,5 +70,11 @@
 		"username": "Hale",
 		"description": "Part-time derg, designer for puroto",
 		"avatar": "/avatar/Hale.png"
+	},
+	{
+		"name": "Sigma",
+		"username": "Sigmanificient",
+		"description": "Designer for Puroto & Front End Developer. I use Arch btw ฅ^•ﻌ•^ฅ",
+		"avatar": "/avatar/Sigma.webp"
 	}
 ]
