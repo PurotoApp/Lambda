@@ -1,5 +1,5 @@
 # prepare the files
-FROM registry.access.redhat.com/ubi8/nodejs-16-minimal:1-39 as builder
+FROM registry.access.redhat.com/ubi8/nodejs-16-minimal:1-43 as builder
 COPY --chown=1001:1001 ./ /source
 WORKDIR /source
 RUN npm i \
